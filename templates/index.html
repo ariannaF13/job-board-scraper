@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charleston WV Tech Jobs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+
+    <!-- ===========================
+         SITE PURPOSE / HERO SECTION
+         =========================== -->
+    <header class="hero">
+        <h1>Charleston WV Tech Opportunities</h1>
+        <p class="subtitle">
+            Helping students and early‑career computer science professionals in the Charleston, West Virginia area find real opportunities and grow their skills.
+        </p>
+    </header>
+
+    <!-- ===========================
+         EMAIL SUBSCRIPTION SECTION
+         =========================== -->
+    <section class="email-subscribe">
+        <h2>Stay Updated</h2>
+        <p>Get new job listings delivered straight to your inbox.</p>
+
+        <form action="/run" method="POST" class="subscribe-form">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- ===========================
+         FILTERS (TO BE IMPLEMENTED)
+         =========================== -->
+    <section class="filters">
+        <h2>Filters</h2>
+        <p class="coming-soon">Simple filters coming soon...</p>
+
+        <!-- PLACEHOLDER FOR FUTURE FILTERS -->
+        <!-- Example:
+        <select name="location-filter"></select>
+        <select name="company-filter"></select>
+        <select name="pay-filter"></select>
+        -->
+    </section>
+
+    <!-- ===========================
+         JOB LISTINGS SECTION
+         =========================== -->
+    <section class="job-listings">
+        <h2>Job Listings</h2>
+
+        <!-- SQL‑IMPORTED JOB DATA WILL BE INSERTED HERE -->
+        <!-- ============================================ -->
+        <!-- Example structure for each job card: -->
+
+        <!--
+        <div class="job-card">
+            <h3 class="job-title">Software Engineer Intern</h3>
+            <p class="company">ABC Tech</p>
+            <p class="location">Charleston, WV</p>
+            <p class="pay">$20/hr</p>
+            <a href="https://example.com" target="_blank" class="job-link">View Job</a>
+        </div>
+        -->
+        {% for job in jobs %}
+        <div class="job-card">
+            <h3 class="job-title">{{ job['title'] }}</h3>
+            <p class="company">{{ job['company'] }}</p>
+            <p class="location">{{ job['location'] }}</p>
+            <a href="{{ job['url'] }}" target="_blank" class="job-link">View Job</a>
+        </div>
+        {% endfor %}
+        <!-- Your backend will loop through SQL results and generate these cards -->
+    </section>
+
+    <!-- ===========================
+         RESOURCE LINKS
+         =========================== -->
+    <section class="resources">
+        <h2>Learning Resources</h2>
+        <ul>
+            <li><a href="https://leetcode.com" target="_blank">LeetCode</a></li>
+            <li><a href="https://roadmap.sh" target="_blank">roadmap.sh</a></li>
+            <li><a href="https://freecodecamp.org" target="_blank">freeCodeCamp</a></li>
+            <li><a href="https://codedex.io" target="_blank">Codedex</a></li>
+        </ul>
+    </section>
+
+    <footer class="footer">
+        <p>2026 Charleston WV Tech Jobs</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+/* ===========================
+   GLOBAL STYLES
+   =========================== */
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background-color: #0d0d0f;
+    color: #e6e6e6;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+}
+
+a {
+    color: #66e0ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #9d6bff;
+}
+
+/* ===========================
+   HERO SECTION
+   =========================== */
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(135deg, #1a1a1d, #111113);
+    border-bottom: 2px solid #9d6bff;
+}
+
+.subtitle {
+    max-width: 600px;
+    margin: 0.5rem auto 0;
+    color: #cccccc;
+}
+
+/* ===========================
+   EMAIL SUBSCRIBE
+   =========================== */
+.email-subscribe {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.subscribe-form {
+    margin-top: 1rem;
+}
+
+.subscribe-form input {
+    padding: 0.7rem;
+    width: 250px;
+    border-radius: 6px;
+    border: none;
+    margin-right: 0.5rem;
+    background: #1c1c1f;
+    color: #e6e6e6;
+}
+
+.subscribe-form button {
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    background: #9d6bff;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.subscribe-form button:hover {
+    background: #b78cff;
+}
+
+/* ===========================
+   FILTERS
+   =========================== */
+.filters {
+    padding: 2rem 1rem;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+}
+
+.coming-soon {
+    color: #888;
+}
+
+/* ===========================
+   JOB LISTINGS
+   =========================== */
+.job-listings {
+    padding: 2rem 1rem;
+}
+
+.job-card {
+    background: #1a1a1d;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1.2rem;
+    border-left: 4px solid #66e0ff;
+    transition: transform 0.2s;
+}
+
+.job-card:hover {
+    transform: translateX(5px);
+}
+
+.job-title {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.company, .location, .pay {
+    margin: 0.3rem 0;
+    color: #cccccc;
+}
+
+.job-link {
+    display: inline-block;
+    margin-top: 0.8rem;
+    padding: 0.5rem 1rem;
+    background: #66e0ff;
+    color: #000;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.job-link:hover {
+    background: #9d6bff;
+    color: #fff;
+}
+
+/* ===========================
+   RESOURCES
+   =========================== */
+.resources {
+    padding: 2rem 1rem;
+}
+
+.resources ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resources li {
+    margin: 0.5rem 0;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    color: #777;
+    border-top: 1px solid #222;
+}
