@@ -1,5 +1,8 @@
 
 .env
+Notes.txt
 __pycache__/
 *.__pycache__.venv/
 venv/
+*db
+*.sqbpro
