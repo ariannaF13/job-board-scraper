@@ -37,7 +37,6 @@ import re
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
-#from flask import Flask, render_template, request
 import sqlite3
 import os
 from dotenv import load_dotenv

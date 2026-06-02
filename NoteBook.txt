@@ -1,0 +1,154 @@
+Job Board Scraper Developer Notes
+
+
+
+
+
+Overall Architecture:
+
+-User-
+|
+V
+-Flask Web App-
+|
+V
+-SQLite Database-
+|
+V
+-Job Scrapers-
+
+
+-Administrative Tools-
+|
+V
+-Refresh Database-
+|
+V
+-Send Job Emails-
+
+
+
+
+
+File Overview:
+
+app.py
+-Main Flask Application
+-All Routes
+
+Main.py
+-Scrapes West Virginia job listings
+-Uses Selenium for TC Energy because content is dynamically rendered
+-Parses, cleans results
+-Saves structured job data to database
+-Saves emails to database
+-Database refresh
+-Email structuring and sending functionality
+
+
+
+
+
+Technologies Used:
+
+
+Flask
+Purpose: Creates the web application and routes
+
+Why I learned it: Needed a way to display jobs and manage subscriptions from Python
+
+Key concepts learned: Routes, Templates, Forms, Request handling
+
+
+
+Selenium
+Purpose: Automate a browser
+
+Why I learned it: TC Energy jobs could not be retrieved through normal requests
+
+Key concepts learned: WebDriver, Dynamic content, Browser automation
+
+
+
+SQLite
+Purpose: Store jobs and subscriptions
+
+Why I learned it: Needed storage
+
+Key concepts learned: Tables, Queries, Primary Keys, Database refresh process
+
+
+
+Requests
+Purpose: Allows you to send http
+
+Why I learned it: Needed to be able to retrieve data from websites
+
+Key concepts I learned: Get, Headers
+
+
+
+BeautifulSoup
+Purpose: Makes it easier to navigate, search and extract data from web pages
+
+Why I learned it: The information needed to be parsed and cleaned for user reading
+
+Key concepts I learned: html.parser, 
+
+
+
+Pandas
+Purpose: Data Analysis Library
+
+Why I learned it: Data needed to be formatted into a table in beginning, feature is still there for future enhancements
+
+Key concepts I learned:read_sql_query
+
+
+
+Email System
+Purpose: send job listings to subscribed users
+
+Libraries used: smtplib, email.mime.multipart, email.mime.text
+
+What I learned: SMTP email delivery, building HTML email content, managing email credentials securely
+
+
+
+Text Parsing
+Purpose: Clean and analyze scraped job data
+
+Libraries Used: re (regular expression)
+
+What I learned: Pattern matching, text extraction, data cleaning
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

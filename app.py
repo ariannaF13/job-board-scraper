@@ -7,7 +7,6 @@ Flask is used to convert python code into web usables
 from flask import Flask, render_template, request, redirect, url_for, jsonify
 import Main
 import sqlite3
-import subprocess
 import os
 from dotenv import load_dotenv
 load_dotenv()
