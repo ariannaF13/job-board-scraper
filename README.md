@@ -39,6 +39,7 @@ Future Improvements include:
 -Enhanced email subscription management
 -Automated scheduled refreshes
 -Public deployment for broader access
+-Option to export as CSV
 
 
 
